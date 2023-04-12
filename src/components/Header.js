@@ -16,10 +16,10 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex ">
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/blogs">Blog</Link>
@@ -44,19 +44,19 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <a href="/#about">About</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
+            <Link to="/blogs">Blog</Link>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="/#resume">Resume</a>
+            <a href="https://drive.google.com/file/d/175YDJCitLGRmG-dX6q3SuhbqRmdTqFWL/view?usp=sharing">Resume</a>
           </li>
         </ul>
       </nav>

@@ -6,6 +6,7 @@ import {
   AiOutlineYoutube,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -59,12 +60,12 @@ const Hero = () => {
             </a>
           </div>
 
-          <a
-            href="/#projects"
+          <Link
+            to="/projects"
             className=" btn bg-accent  border-2 border-[#7477FF] rounded-lg text-white px-6 py-3 hover:bg-transparent"
           >
             See Projects
-          </a>
+          </Link>
         </div>
 
         <div className="hero-img">
