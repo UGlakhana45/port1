@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="bg-indigo-900 px-5 text-white py-32 h-screen">
+    <section className="bg-indigo-900 px-5 text-white py-32 min-h-screen">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl lg:text-6xl">

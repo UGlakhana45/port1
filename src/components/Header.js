@@ -6,7 +6,8 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => setToggle(!toggle);
-
+  var download = true;
+  var href= "/Udaylakhana.pdf";
   return (
     <header className="flex text-3xl justify-around px-5 py-2 bg-primary text-white fixed w-full z-10">
       <a href="/" className="logo font-bold text-accent">
@@ -28,13 +29,14 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a
-              href="https://drive.google.com/file/d/175YDJCitLGRmG-dX6q3SuhbqRmdTqFWL/view?usp=sharing"
+            <Link
+              to={href}
               target="_blank"
               rel="noreferrer"
+              download={download}
             >
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
