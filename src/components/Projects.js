@@ -17,7 +17,7 @@ const Projects = () => {
       img: port,
       title: "Portfolio",
       desc: "An advanced Portfolio website in react js using React Router and Tailwind CSS.",
-      code: "https://github.com/UGlakhana45/port",
+      code: "https://github.com/UGlakhana45/port1",
     },
     {
       img: AdvanceToDo,
@@ -53,7 +53,7 @@ const Projects = () => {
                 src={project.img}
                 alt={project.title}
               />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 rounded-lg">
+              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-black  opacity-0 duration-500 justify-center flex-col hover:opacity-100 rounded-lg">
                 <p className="py-5 text-center font-bold px-2 text-white">
                   {project.desc}
                 </p>
