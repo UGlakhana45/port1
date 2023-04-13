@@ -10,7 +10,7 @@ const Projects = () => {
     {
       img: Patient,
       title: "Patients-App",
-      desc: " A patients App which is built with React-Native core components and Async-Storage and navigation ",
+      desc: " A patients App which is built with React-Native Async-Storage and navigation ",
       code: "https://github.com/IPS-React-Native-Intern/Patient-App/tree/Uday_Lakhana",
     },
     {
@@ -38,6 +38,7 @@ const Projects = () => {
           <p className="pb-5 mb-5">
             These are some of my basic projects. I have built these with React
             and Tailwind CSS. Check them out.
+            You can have a look at my code also.
           </p>
         </div>
 

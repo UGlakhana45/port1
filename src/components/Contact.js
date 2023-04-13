@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 import Hero from "../assets/hero-img.png";
 
 const Contact = () => {
-  const [formData,setFormData] = useState({
-    name:'',
-    email:'',
-    massage:'',
-  })
-  const onSubmit = () =>{
-      setFormData({
-        name :'',
-        email:'',
-        massage:'',
-      });
-      alert('Thank you for contacting me.')
-  }
-  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    massage: "",
+  });
+  const onSubmit = () => {
+    setFormData({
+      name: "",
+      email: "",
+      massage: "",
+    });
+    alert("Thank you for contacting me.");
+  };
+
   return (
     <section
       className="bg-gradient-to-b from-blue-900 body-font relative"
@@ -54,10 +54,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div
-          
-          className=" lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 px-2 rounded-lg"
-        >
+        <div className=" lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 px-2 rounded-lg">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
             Feedback
           </h2>
@@ -73,8 +70,8 @@ const Contact = () => {
               id="name"
               name="name"
               value={formData.name}
-              onChange={(text) =>{
-                setFormData(text)
+              onChange={(text) => {
+                setFormData(text);
               }}
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
@@ -88,8 +85,8 @@ const Contact = () => {
               id="email"
               name="email"
               value={formData.email}
-              onChange={(text) =>{
-                setFormData(text)
+              onChange={(text) => {
+                setFormData(text);
               }}
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
@@ -102,16 +99,19 @@ const Contact = () => {
               Message
             </label>
             <textarea
-            value={formData.massage}
-            onChange={(text) =>{
-              setFormData(text)
-            }}
+              value={formData.massage}
+              onChange={(text) => {
+                setFormData(text);
+              }}
               id="message"
               name="message"
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
-          <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={onSubmit}>
+          <button
+            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            onClick={onSubmit}
+          >
             submit
           </button>
           <p className="text-xs text-gray-500 mt-3">
