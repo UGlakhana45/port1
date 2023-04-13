@@ -6,16 +6,17 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => setToggle(!toggle);
+  const handleClose = () => setToggle(false);
   var download = true;
   var href= "/Udaylakhana.pdf";
   return (
-    <header className="flex text-3xl justify-around px-5 py-2 bg-primary text-white fixed w-full z-10">
+    <header className="flex text-3xl justify-around px-5 py-4 bg-primary text-white fixed w-full z-10">
       <a href="/" className="logo font-bold text-accent">
         Uday
       </a>
 
       <nav className="hidden md:block">
-        <ul className="flex ">
+        <ul className="flex gap-5">
           <li>
             <Link to="/projects">Projects</Link>
           </li>
@@ -46,20 +47,28 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link onClick={handleClose} to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link onClick={handleClose} to="/about">About</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog</Link>
+            <Link onClick={handleClose} to="/blogs">Blog</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link onClick={handleClose} to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/175YDJCitLGRmG-dX6q3SuhbqRmdTqFWL/view?usp=sharing">Resume</a>
-          </li>
+            <Link
+              to={href}
+              target="_blank"
+              rel="noreferrer"
+              download={download}
+              onClick={handleClose}
+            >
+              Resume
+            </Link>
+            </li>
         </ul>
       </nav>
 

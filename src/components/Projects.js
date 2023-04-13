@@ -47,7 +47,7 @@ const Projects = () => {
       <div className="projects container mx-auto grid md:grid-cols-3 gap-10 rounded-lg ">
         {projects.map((project, i) => {
           return (
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }} className="relative " key={i}>
+            <div  className="relative " key={i}>
               <img
                 className="rounded-lg mb-5 mt-5"
                 src={project.img}
@@ -68,7 +68,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </div>
